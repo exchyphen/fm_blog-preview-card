@@ -1,0 +1,99 @@
+:root {
+    /* colors */
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+
+    /* font */
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100dvw;
+    height: auto;
+    background: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.main-container {
+    width: 375px;
+    height: 520px;
+    background: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 15px;
+    box-shadow: 10px 10px 0 0px var(--black);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.status-text {
+    width: 90px;
+    padding: 5px;
+    background: var(--yellow);
+    text-align: center;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+.description {
+    color: var(--grey);
+    line-height: 1.5rem;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-img {
+    width: 2rem;
+    height: auto;
+}
+
+.profile-name {
+    font-weight: 800;
+}
+
+.attribution {
+    font-size: 1rem;
+}
+
+.main-container:hover {
+    box-shadow: 15px 15px 0 0 var(--black);
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--yellow);
+}
